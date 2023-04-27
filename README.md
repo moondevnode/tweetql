@@ -110,3 +110,54 @@ mutation($text: String!, $userId: ID!) {
 mutation($deleteTweetId: ID!) {
   deleteTweet(id: $deleteTweetId)
 }
+
+
+## REST API -> Graphql API
+### prerequisite
+> install fetch
+```
+npm i node-fetch
+```
+
+> install json viewer(chrome extension)
+
+> altair graphql(option)
+https://altairgraphql.dev/
+https://altair-gql.sirmuel.design
+http://localhost:4000/
+
+
+### movie REST api data
+> chrome 
+```
+https://yts.mx/api/v2/list_movies.json
+```
+
+> server.js 편집
+
+Movie type, query, resolvers
+
+### graphqls
+```gql
+{
+  allMovies {
+    id
+    title
+    summary
+    rating
+    url
+    background_image
+  }
+}
+
+query ($movieId: Int!) {
+  movie(id: $movieId) {
+    id
+    title
+    summary
+    rating
+    url
+    background_image
+  }
+}
+```
