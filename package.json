@@ -1,10 +1,11 @@
 {
   "name": "tweetql",
   "version": "1.0.0",
-  "description": "",
+  "description": "GraphQL로 영화 API 만들기(nomadcoders graphql cource)",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
@@ -16,5 +17,13 @@
   "devDependencies": {
     "nodemon": "^2.0.22"
   },
-  "type": "module"
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moondevnode/tweetql.git"
+  },
+  "bugs": {
+    "url": "https://github.com/moondevnode/tweetql/issues"
+  },
+  "homepage": "https://github.com/moondevnode/tweetql#readme"
 }
